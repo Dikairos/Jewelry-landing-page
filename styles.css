@@ -1,0 +1,248 @@
+
+
+html, body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-size: 16px;
+ 
+}
+
+/*nav-bar*/
+
+
+
+.nav-bar{
+    position: fixed;    
+    top: 0; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    height: 10vh;
+    gap: 1.5rem;
+    background-color: black;
+animation: slideDown 1s ease-in-out ;
+    width: 100%;
+    font-size: 1rem;
+    z-index: 1;
+}
+
+.nav-bar a{
+    color: white;
+    text-decoration: none;
+}
+
+/*.nav-bar a:hover{
+
+}*/
+
+/*logo styled in a div*/
+.logo{
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    width: 2rem;
+    height: auto;
+    border-radius: 50%;
+    position: relative;
+    right: 1rem;
+}
+
+.logo img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+
+/*section*/
+.hero{
+ opacity: 0.9;
+ background: url(pexels-say.jpg) no-repeat;
+background-size: cover;
+background-position: center;
+ padding: 3rem;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ height: 100vh;
+}
+
+.hero h1{
+    margin-top: 6rem;
+    text-align: center;
+    color: red;
+    margin-bottom: 0px;
+}
+
+.hero p{
+    text-align: center;
+    font-size: 1rem;
+    color: white;
+  
+    margin-top: 10rem;
+
+}
+
+.shop-now{
+    margin-top: 0px;
+    margin-bottom: 3rem;
+    padding: 1rem;
+    font-size: 1rem;
+    background: linear-gradient(45deg, red,  purple );
+    color: white;
+    border: none;
+    border-radius: 10px;
+
+}
+
+
+/*section2*/
+
+.collections{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: black;
+    color: white;
+
+
+}
+
+
+.collections h2{
+text-align: center;
+animation: slideIn 3s ease-in-out;
+margin: 0;
+padding: 20px;
+}
+
+@keyframes slideIn{
+    0%{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slideDown{
+    0%{
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+/*section 2 images*/
+
+
+
+
+.collections img{
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    margin: 20px auto;
+}
+
+.description-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+  
+    margin: 0px auto;
+    border: 1px dashed purple;
+
+}
+
+.description-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:50%;;
+    margin: 40px auto;
+    border: 1px dashed purple;
+}
+
+
+.description-3{
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+  
+    margin: 20px auto;
+    border: 1px dashed purple;
+}
+
+
+.pic-div p{
+text-align: center;
+margin: 0 10px 10px 10px;
+}
+
+/*section 3*/
+
+.about{
+    background-color: #424444;
+
+}
+
+.about h2{
+    margin-top: 0;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+   
+}
+
+.about p{
+    margin-bottom: 10px;
+    padding: 10px;
+    margin-left: 50%;
+    
+}
+
+.about img{
+position: absolute;
+    display: flex;
+    width: 40%;
+   align-self: center;
+   margin-left: 10px;
+}
+/*contact*/
+.contact{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+
+/*footer*/
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
