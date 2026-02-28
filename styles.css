@@ -34,27 +34,30 @@ animation: slideDown 1s ease-in-out ;
     text-decoration: none;
 }
 
+.nav{
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right:3rem;
+}
+
+li{
+    list-style: none ;
+}
+
+
 /*.nav-bar a:hover{
 
 }*/
 
 /*logo styled in a div*/
 .logo{
-    display: flex;
-    align-items: center;    
-    justify-content: center;
     width: 2rem;
     height: auto;
-    border-radius: 50%;
-    position: relative;
-    right: 1rem;
+    border-radius: 50%;  
 }
 
-.logo img{
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
-}
 
 
 /*section*/
@@ -82,13 +85,13 @@ background-position: center;
     text-align: center;
     font-size: 1rem;
     color: white;
-  
-    margin-top: 10rem;
+  margin-bottom: 0;
+    margin-top: 15rem;
 
 }
 
 .shop-now{
-    margin-top: 0px;
+    margin-top: 2rem;
     margin-bottom: 3rem;
     padding: 1rem;
     font-size: 1rem;
@@ -184,8 +187,7 @@ padding: 20px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 50%;
-  
+    width: 50%;    
     margin: 20px auto;
     border: 1px dashed purple;
 }
@@ -221,6 +223,12 @@ margin: 0 10px 10px 10px;
     padding: 10px;
     margin-left: 50%;
     
+}
+
+.about p::first-letter{
+    font-size: 2rem;
+    line-height: 1;
+    font-style: italic;
 }
 
 .about img{
